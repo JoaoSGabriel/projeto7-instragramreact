@@ -113,7 +113,7 @@ h6 {
     justify-content: center;
 }
 
-.left-Contet {
+.left-Content {
     width: 614px;
 }
 
@@ -178,13 +178,60 @@ h6 {
     margin-left: 28px;
 }
 
+.sidebar {
+    width: 293px;
+    height: 100px;
+    position: absolute;
+    top: 88px;
+    right: 0px;
+}
+
+.sidebar-Top {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-Top img {
+    width: 56px;
+    height: 56px;
+    border-radius: 33px;
+    margin: 0 17px 0 0;
+}
+
+.sidebar-Line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.sidebar-Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+.page {
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.page img {
+    width: 32px;
+    height: 32px;
+    border-radius: 33px;
+    margin: 0 11px 0 0;
+}
+
 .posts {
     width: 614px;
-    margin-top: 24px;
+    margin: 24px 0 0 0;
 }
 
 .post{
-    margin-bottom: 60px;
+    margin: 0 0 60px 0;
     height: auto;
     background-color: #FFFFFF;
 }
@@ -234,4 +281,87 @@ h6 {
     height: 20px;
     margin: 0 10px;
     border-radius: 25px;
+}
+.menu-Mobile,
+.baseboard-Mobile {
+    display: none;
+}
+@media (max-width: 950px) {
+    .sidebar,
+    .fake-Sidebar{
+        display: none;
+    }
+    .navbar{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@media (max-width: 614px) {
+    .menu {
+        display: none;
+    }
+    .left-Content {
+        width: 100vw;
+    }
+    .menu-Mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #DBDBDB;
+        height: 54px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+    .baseboard-Mobile {
+        height: 54px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-top: 1px solid #DBDBDB;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        box-sizing: border-box;
+        padding: 0 20px;
+        backface-visibility: hidden;
+    }
+    .box-Stories {
+        width: 100%;
+        background-color: inherit;
+        border: none;
+        overflow: scroll;
+        margin:60px 0 0 0;
+    }
+    .arrow {
+        display: none;
+    }
+    .posts {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .post > img {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .post-Menu {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .post-Icons {
+        margin: 15px 10px 10px 10px;
+    }
 }

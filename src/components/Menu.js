@@ -1,3 +1,5 @@
+import Sidebar from './Sidebar'
+
 function NavOne () {
     return (
         <div class="navOne">
@@ -34,6 +36,7 @@ export default function Menu () {
                 <NavOne />
                 <NavTwo />
                 <NavThree />
+                <Sidebar />
             </div>
         </div>
     );

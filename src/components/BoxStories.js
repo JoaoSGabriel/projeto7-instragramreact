@@ -21,6 +21,16 @@ export default function BoxStories() {
             <Stories img="./img/logo.png" name="Nome legal"/>
             <Stories img="./img/logo.png" name="Nome legal"/>
             <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
+            <Stories img="./img/logo.png" name="Nome legal"/>
         </div>
     );
 }

@@ -4,7 +4,7 @@ import Posts from "./Posts";
 export default function Content () {
     return (
         <div class="content">
-            <div class="left-Contet">
+            <div class="left-Content">
                 <BoxStories />
                 <Posts />
             </div>
