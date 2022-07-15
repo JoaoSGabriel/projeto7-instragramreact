@@ -150,6 +150,7 @@ h6 {
 
 .stories p{
     max-width: 60px;
+    max-height: 13px;
     overflow: hidden;
     text-align: center;
 }
@@ -265,11 +266,16 @@ h6 {
     margin: 10px;
 }
 
+.post-Icons ion-icon {
+    cursor: pointer;
+}
+
 .icons-Left {
     width: 60px;
     display: flex;
     justify-content: space-between;
 }
+
 .post-Comments {
     display: flex;
     align-items: center;
