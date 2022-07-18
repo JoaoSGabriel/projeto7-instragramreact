@@ -1,4 +1,18 @@
+import React from "react";
+
 function Post (props) {
+    const [like, setLike] = React.useState('md hydrated');
+    const [iconName, setIconName] = React.useState('heart-outline')
+    function likePost () {
+        if (like === 'md hydrated') {
+            setLike('md hydrated like');
+            setIconName('heart')
+        } else {
+            setLike('md hydrated');
+            setIconName('heart-outline')
+        }
+    }
+
     return (
         <div class="post">
             <div class="post-Menu">
@@ -6,11 +20,11 @@ function Post (props) {
                 {props.name}
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
-            <img src={props.postimg} alt="post"/>
+            <img onDoubleClick={likePost} src={props.postimg} alt="post"/>
             <div>
                 <div class="post-Icons">
                     <div class="icons-Left">
-                        <ion-icon name="heart-outline"></ion-icon>
+                        <ion-icon onClick={likePost} class={like} name={iconName}></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
@@ -33,6 +47,7 @@ const post_Content = [
     {name: "Afghan Hound", profileimg: "https://love.doghero.com.br/wp-content/uploads/2020/07/8219516661_0b3e160dc8_b.webp", postimg: "https://love.doghero.com.br/wp-content/uploads/2020/07/dog-white-portrait-face.jpg", likedimg: "https://love.doghero.com.br/wp-content/uploads/2019/12/Bloodhound-2.webp", person: "Bloodhound", number: "328.964"}]
 
 export default function Posts() {
+
     return (
         <div class="posts">
             {post_Content.map(item => <Post name={item.name} profileimg={item.profileimg} postimg={item.postimg} likedimg={item.likedimg} person={item.person} number={item.number}/>)}
